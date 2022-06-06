@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.link_logo{
+  position:absolute;
+  top:0%;
+  left:2%;
+}
+.nav_1{
+  position: absolute;
+  top:0%;
+  left:90%;
+}
+
+.login_button{
+  position: absolute;
+  top:5%;
+  left:90%;
+}
+
+body{
+  background-color:#61dafb;
+}

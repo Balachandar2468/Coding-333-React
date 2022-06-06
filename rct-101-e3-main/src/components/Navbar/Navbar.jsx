@@ -18,15 +18,15 @@ const Navbar = () => {
   return (
     <div data-cy="navbar">
       <div>
-        <Link data-cy="navbar-home-link" to="/">
-          Mylogo
+        <Link data-cy="navbar-home-link" to="/" className="link_logo">
+          LOGO
         </Link>
       </div>
       <div>
-        <div data-cy="navbar-cart-items-count">
-          Cart: {cartitem && `(${cartitem})`}
+        <div data-cy="navbar-cart-items-count" className="nav_1">
+          Cart:{cartitem && `(${cartitem})`}
         </div>
-        <button data-cy="navbar-login-logout-button" onClick={handleLoginClick}>
+        <button data-cy="navbar-login-logout-button" onClick={handleLoginClick} className="login_button">
           {isAuth ? "Logout" : "Login"}
         </button>
       </div>

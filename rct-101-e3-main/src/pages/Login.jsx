@@ -21,18 +21,23 @@ const Login = () => {
     }
   };
   return (
+    
     <div>
+      <h3>Login Page</h3>
       <form onSubmit={handleSubmit} >
       <input data-cy="login-email"  name="email"
           type="email"
           placeholder="Enter Your Email"
           value={btn.email}
-          onChange={hanldeChange} />
+          onChange={hanldeChange} /><br/>
+          <p> </p>
+
       <input data-cy="login-password"  name="password"
           type="password"
           placeholder="Enter Your Password..."
           value={btn.password}
-          onChange={hanldeChange}/>
+          onChange={hanldeChange}/><br />
+          <p></p>
       <button data-cy="login-submit" type="submit" value="Login">Login</button>
       </form>
     </div>
